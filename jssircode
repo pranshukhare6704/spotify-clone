@@ -1,0 +1,9 @@
+const playButtonClickHandler = () => {
+    console.log("Play button clicked!!!!!!!");
+}
+
+// Get the html tag
+const playButton = document.querySelector(".playbutton");
+
+// register event handler/listner
+playButton.addEventListener("click", playButtonClickHandler);

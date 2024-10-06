@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body class="body">
+    <div class="nav">
+        <div class="navlogo">
+            <img src="logo2.jpg" alt="Spotify logo2" height="79px"><span class="spotifylogotext">Spotify</span>
+        </div>
+        <div class="navhomeabout">
+            <p class="navhome" onclick="home()">Home</p>
+            <p class="navabout" onclick="about()">About</p>
+        </div>
+
+    </div>
+    <div class="mainbody">
+        <div class="mainbodysub">
+            <div class="songstext">
+                <h1 class="ncs">Best of NCS - No Copyright Sound</h1>
+            </div>
+            <div class="songs">
+                <div class="firstsong" onclick="firstsong()">
+                    <img src="cover1.jpg" alt="cover1 image" class="coversong1">
+                    <p>Salam-e-Ishq</p>
+                    <p>05:34</p>
+                </div>
+                <div class="secondsong" onclick="secondsong()">
+                    <img src="cover1.jpg" alt="cover1 image" class="coversong1">
+                    <p>Love me like you do</p>
+                    <p>05:34</p>
+                </div>
+                <div class="thirdsong" onclick="thirdsong()">
+                    <img src="cover1.jpg" alt="cover1 image" class="coversong1">
+                    <p>O Meri Jaan</p>
+                    <p>05:34</p>
+                </div>
+                <div class="fourthsong" onclick="fourthsong()">
+                    <img src="cover1.jpg" alt="cover1 image" class="coversong1">
+                    <p>Ranjish hi sahi</p>
+                    <p>05:34</p>
+                </div>
+                <div class="fifthsong" onclick="fifthsong()">
+                    <img src="cover1.jpg" alt="cover1 image" class="coversong1">
+                    <p>Dil-e-nadaan</p>
+                    <p>05:34</p>
+                </div>
+                <div class="sixthsong" onclick="sixthsong()">
+                    <img src="cover1.jpg" alt="cover1 image" class="coversong1">
+                    <p>Shubh Mangal Savdhaan</p>
+                    <p>05:34</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <audio id="audioplayer" ontimeupdate="audioPlayerTimeUpdate()"></audio>
+            <div class="bottomprogressbarsegment">
+                <p class="time" id="currenttime">00:00</p>
+                <input type="range" id="progressbar" name="vol" min="0" max="100" value="0">
+                <p class="time" id="totalduration">02:00</p>
+            </div>
+            <div class="playbuttonsegment">
+                <img src="playing.gif" alt="playing gif" class="gifbutton">
+                <div class="playingbutton">
+                    <img src="rewind.png" alt="rewind button" class="rewindbutton" onclick="rewindButtonClickHandler()">
+                    <img src="play-button.png" alt="play button" class="playbutton" onclick="playButtonClickHandler()" id="buttonplay">
+                    <img src="fast-forward.png" alt="fast-forward button" class="forwardbutton" onclick="forwardButtonClickHandler()">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js">
+
+    </script>
+</body>
+
+</html>
